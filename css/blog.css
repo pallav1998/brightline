@@ -16,7 +16,7 @@ body {
     "b6"
     "b7";
     grid-gap: 4%;
-    margin: 10% 0;
+    /* margin: 10% 0; */
 }
 #box1 ,#box2, #box3, #box4, #box5, #box6, #box7 {
     display: flex;
@@ -32,6 +32,9 @@ body {
 }
 p {
     color: #a8abb0;
+}
+a{
+    color: tomato;
 }
 img {
     display: block;

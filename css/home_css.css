@@ -1,27 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 body>div{
     width: 90%;
-    height: auto;
     margin: auto;
 }
 /* main div  */
 #main{
-    display: grid;
-    gap: 20px;
-}
-#main_right{
-    grid-area: main_right;
-}
-#main_left{
-    grid-area: main_left;
+    display: flex;
 }
 #main2{
     display: grid;
     grid-template-columns: auto auto;
 }
-body>div:nth-child(3)>div:nth-child(1){
+body>div:nth-child(4)>div:nth-child(1){
     grid-area: main2_left;
 }
-body>div:nth-child(3)>div:nth-child(2){
+body>div:nth-child(4)>div:nth-child(2){
     grid-area: main2_right;
 }
 .image_logo{
@@ -51,38 +47,35 @@ body>div:nth-child(3)>div:nth-child(2){
 .dual_paragraph>div{
     margin: 15px;
 }
-
+label{
+    color: white;
+    font-family: arial;
+}
+input{
+    width: 100px;
+    padding: 10px;
+    border-radius: 3px;
+}
 
 /* Media  */
 @media only screen and (min-width: 992px) {
-    #main{
-        grid-template: "main_left main_right";
-        height: auto;
-    }
     #main2{
-        grid-template: "main2_left main2_right"
+        grid-template: "main2_left main2_right";
     }
 }
 @media only screen and (max-width: 991px) {
-    #main{
-        grid-template: "main_left main_right";
-        height: auto;
-    }
     #main2{
         grid-template: "main2_left"
-                        "main2_right"
+                        "main2_right";
     }
     #logo_div{
         flex-direction: column;
     }
 }
 @media only screen and (max-width: 768px) {
-    #main{
-        grid-template: "main_left main_right";
-    }
     #main2{
         grid-template: "main2_left "
-                        "main2_right"
+                        "main2_right";
     }
     #logo_div{
         flex-direction: column;
@@ -99,16 +92,15 @@ body>div:nth-child(3)>div:nth-child(2){
     #two_image{
         flex-direction: column;
     }
-    
+    #email_zip{
+        flex-direction: column;
+    }
+   
 }
 @media only screen and (max-width: 660px) {
-    #main{
-        grid-template: "main_left main_right";
-        height: auto;
-    }
     #main2{
         grid-template: "main2_left"
-                        "main2_right"
+                        "main2_right";
     }
     #logo_div{
         flex-direction: column;
@@ -123,6 +115,9 @@ body>div:nth-child(3)>div:nth-child(2){
         flex-direction: column;
     }
     #two_image{
+        flex-direction: column;
+    }
+    #email_zip{
         flex-direction: column;
     }
 }

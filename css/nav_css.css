@@ -1,7 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .nav{
     position: fixed;
     background-color: white;
     margin-top: 0px;
+    padding: 0px;
+    top: 0;
+    display: flex;
+    padding: 20px;
 }
 .nav_two{
     display: flex;
@@ -41,4 +49,7 @@
 .nav_li ul li:hover > ul{
     display: block;
     width: 200px;
+}
+.nav_li ul li a:hover{
+   color: rgb(14, 168, 214);
 }
