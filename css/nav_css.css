@@ -1,28 +1,44 @@
-#nav{
-    display: flex;
-    width: 100%;
-    height: 150px;
+.nav{
     position: fixed;
     background-color: white;
-    border: 1px solid black;
-  
+    margin-top: 0px;
 }
-#nav>div>img{
+.nav_two{
+    display: flex;
+    margin-left: 5%;
+    padding: 20px;
+}
+.nav_logo{
     width: 20%;
-    border: 1px solid black;
 }
-#nav>div>div{
-    width: 20%;
-    height: 40%;
-    padding: 15px;
-    border: 1px solid black;
+
+.nav_li ul{
+    list-style: none;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    
 }
-#nav>div>div>a>button{
-    border: none;
+.nav_li ul a{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 15px;
+    display: block;
 }
-#nav>div>div>select{
-    border: none;
+.nav_li ul li{
+    float: left;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
-option{
-    border: none;
+.nav_li ul ul{
+    position: absolute;
+    background-color: rgb(252, 252, 252);
+    top: 100%;
+    display: none;
+}
+.nav_li ul li:hover > ul{
+    display: block;
+    width: 200px;
 }
