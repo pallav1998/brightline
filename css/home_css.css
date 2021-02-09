@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+body>div{
+    width: 90%;
+    margin: auto;
+}
+/* main div  */
+#main{
+    display: flex;
+}
+#main2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+body>div:nth-child(4)>div:nth-child(1){
+    grid-area: main2_left;
+}
+body>div:nth-child(4)>div:nth-child(2){
+    grid-area: main2_right;
+}
+.image_logo{
+    width: auto;
+    height: auto;
+}
+.the_right_care{
+    width: 30%;
+    margin: auto;
+    color: rgb(119, 119, 119);
+    font-size: 20px;
+    text-align: left;
+}
+.main_the_right_care{
+    display: flex;
+    width: 70%;
+    height: auto;
+}
+.the_right_care_image{
+    width: 100%;
+}
+.dual_paragraph{
+    display: flex;
+    width: 85%;
+    height: auto;
+}
+.dual_paragraph>div{
+    margin: 15px;
+}
+label{
+    color: white;
+    font-family: arial;
+}
+input{
+    width: 100px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* Media  */
+@media only screen and (min-width: 992px) {
+    #main2{
+        grid-template: "main2_left main2_right";
+    }
+}
+@media only screen and (max-width: 991px) {
+    #main2{
+        grid-template: "main2_left"
+                        "main2_right";
+    }
+    #logo_div{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #main2{
+        grid-template: "main2_left "
+                        "main2_right";
+    }
+    #logo_div{
+        flex-direction: column;
+    }
+    #third_div{
+        flex-direction: column;
+    }
+    .main_the_right_care{
+        flex-direction: column;
+    }
+    .dual_paragraph{
+        flex-direction: column;
+    }
+    #two_image{
+        flex-direction: column;
+    }
+    #email_zip{
+        flex-direction: column;
+    }
+   
+}
+@media only screen and (max-width: 660px) {
+    #main2{
+        grid-template: "main2_left"
+                        "main2_right";
+    }
+    #logo_div{
+        flex-direction: column;
+    }
+    #third_div{
+        flex-direction: column;
+    }
+    .main_the_right_care{
+        flex-direction: column;
+    }
+    .dual_paragraph{
+        flex-direction: column;
+    }
+    #two_image{
+        flex-direction: column;
+    }
+    #email_zip{
+        flex-direction: column;
+    }
+}

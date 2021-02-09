@@ -1,0 +1,21 @@
+#footer{
+    width: 100%;
+    height: auto;
+    min-height: 850px;
+    background-color: rgb(20, 32, 48);
+    display: flex;
+}
+#footer>div{
+    width: 500px;
+    margin: auto;
+}
+@media only screen and (max-width: 660px){
+    #footer{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 780px){
+    #footer{
+        flex-direction: column;
+    }
+}
